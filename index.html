@@ -9,167 +9,26 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 
 </head>
 <body>
+  <!-- Pre Loader -->
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
 
-            <ul id="slide-out" class="sidenav" >
-                <li><div class="user-view">
-                <div class="background">
-                    <img width="300px" height="180px" src="images/code.jpg">
-                </div>
-                <a href="#user"><img class="circle" src="images/abhay.jpg"></a>
-                <a href="#name"><span class="white-text name">Abhay Kesharwani</span></a>
-                <a href="#email"><span class="white-text email">abhaykesharwani40@gmail.com</span></a>
-                </div></li>
-                <li><a href="https://www.linkedin.com/in/abhaykes1/" target="_blank"><i class="material-icons">people</i>Linkedin </a></li>
-                <li><a href="https://www.codechef.com/users/abhaykes1" target="_blank"><i class="material-icons">code</i>codechef </a></li>
-                <!-- <li><a class="subheader">Subheader</a></li> -->
-                <li>
-                    <a class="waves-effect" target="_blank" href="https://drive.google.com/file/d/1Uz9QihoWd4sVih6T5Qy8-FJFgnRovunY/view?usp=sharing">
-                    <i class="material-icons">person</i>
-                    Resume
-                    </a>
-                </li>
-            </ul>
-            <div style="padding: 30px;">       
-                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="small material-icons">menu</i></a>
-            </div>
+  <div>
+    Hello
+  </div>
 
-            <!-- --------------------------------------------------------------------------------------------------------------- -->
-                                                                <!-- about me section -->
-
-            <div class="col s12 m7">
-                <h5  class="header" style="text-align: center;">A LITTLE ABOUT ME</h5>
-                <div class="card horizontal">
-                  <div class="card-image center-align hide-on-small-only	">
-                    <img src="./images/AboutMe.jpg" style="height:100%; width: 100%;">
-                  </div>
-                  <div class="card-stacked">
-                    <div class="card-content">
-                      <p >
-                        I’m a code enthusiast who has been fiddling around with Deep Learning, competitive programming & development work for a while now.
-                        <br/><br/>
-                        I have been developing websites and applications for around 2 years. Most of my experience lies in full-stack development and Embedded systems. 
-                        I have worked with  Javascript/NodeJS, React, C/C++ and a little bit of Java and Python. 
-                        <br/>
-                        Software development gives me hands-on experience in Object-oriented programming and designing of the layout so that I can connect the problems of the real world to their solutions. 
-                        <br/><br/>
-                        Being an active member and a co-coordinator of the Electronics club I like to work on an embedded system and, programming and interfacing with microcontrollers. 
-                        </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- -----------------------------projects----------------------------- -->
-              <center style="padding: 20px;"><h5>Projects<br/>........</h5></center>
-
-              <!-- 1st project -->
-              <div>
-              <div class="col s12 m7 blue darken-3" style="width: 50%; height: 50%;">
-                <h5 class="header" align="center">OH-MISS (Design Project)</h5>
-                <div class="card horizontal">
-                  <div class="card-stacked">
-                    <div class="card-content">
-                      <p>devise a solution to track and monitor flora and fauna in a given ecosystem 
-                        and visualise to resuntantly evaluate the data.</p><br/>
-                      <p>Develoved Embedded software and designed circuit for the device to Store data 
-                        and location timestamps.</p>
-                    </div>
-                    <div class="card-action " align="center">
-                      <a href="https://github.com/abhaykes1/OH-MISS" target="_blank" style="color: #2196f3 ;">More Info.....</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-              <!-- 2nd project -->
-              <div align="right">
-                <div class="col s12 m7  blue darken-3" style="width: 50%; height: 50%;" >
-                  <h5 class="header" align="center">FindLyf</h5>
-                  <div class="card horizontal">
-                  
-                    <div class="card-stacked">
-                      <div class="card-content" align="left">
-                        <p>Developed a snake like bot for identification of live human from debris using CO2
-                          sensor and Pi camera.</p>
-                        <br/>
-                        <p >Created a servor to live stream visuals of Pi camera.</p>
-                      </div>
-                      <div class="card-action" align="center">
-                        <a href="https://github.com/ajwad-shaikh/FindLyfCamera" target="_blank" style="color: #2196f3 ;">More Info.....</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 3rd project -->
-              <div>
-                <div class="col s12 m7 blue darken-3" style="width: 50%; height: 50%;">
-                  <h5 class="header" align="center">Chat App</h5>
-                  <div class="card horizontal">
-                    <div class="card-stacked">
-                      <div class="card-content">
-                        <p>Developed a chat app using React and firebase during summer training in Coding Elements.</p>
-                        <br/>
-                        <p> Main focus of this project was on group chat using Firebase Realtime database and firebase Authentication.</p>
-                      </div>
-                      <div class="card-action " align="center">
-                        <a href="https://github.com/abhaykes1/ChatApp" target="_blank" style="color: #2196f3 ;">More Info.....</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 4th project -->
-              <div align="right">
-                <div class="col s12 m7 blue darken-3" style="width: 50%; height: 50%;" >
-                  <h5 class="header" align="center">Seed sower and metering</h5>
-                  <div class="card horizontal">
-                  
-                    <div class="card-stacked">
-                      <div class="card-content" align="left">
-                        <p>Objective of this project is to make farming convenient for farmers 
-                          by making seed sowing and metering autonomous .</p>
-                      </div>
-                      <div class="card-action" align="center">
-                        <a href="#" target="_blank" style="color: #2196f3 ;">More Info.....</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ---------------------------------------------------footer------------------------------------------------- -->
-              <footer class="page-footer grey darken-3" >
-                <div class="container">
-                  <div class="row">
-                    <div class="col l6 s12">
-                      <h5 class="white-text">Carrer Objective</h5>
-                      <p class="grey-text text-lighten-4">A Talented Pre-Final Year B.Tech student with a strong academic background 
-                          with the ability to think through a problem coupled with the confidence to make ideas heard.</p>
-                    </div>
-                    <div class="col l4 offset-l2 s12">
-                      <h5 class="white-text">Links</h5>
-                      <ul>
-                        <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/abhaykes1/"><i class="material-icons">Linkedin</i></a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://twitter.com/Abhaykes1"><i class="material-icons">Twitter</i></a></li>
-                        <li><a class="grey-text text-lighten-3 material-icons" href="https://www.facebook.com/abhay.kesharwani.948">Facebook</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="footer-copyright"  >
-                  <div class="container">
-                  © 2014 Copyright Text
-                  <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
-                  </div>
-                </div>
-              </footer>
+  <script>
+    $(window).on("load", function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
 
 </body>
 </html>
