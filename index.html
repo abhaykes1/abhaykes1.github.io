@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 
@@ -18,12 +19,8 @@
 
 
   <div class="container">
-    <!-- <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" />
-    <h2 style="color: aliceblue;" id="Lorem_Ipsum">Lorem Ipsum</h2>
-    <p style="color: aliceblue;" class="main-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-    <p style="color: aliceblue;">Go to the <a href="#Lorem_Ipsum">top</a>.</p> -->
-    
-    <!-- home -->
+  
+    <!------------------------------------------------------------ home ---------------------------------------------------------------------------------->
     <div style="padding-top: 20px;"  class="row" id="home">
       <div class="nameContainer col s12 l6">
         <h2 class="truncate" style="color: white;">ABHAY</h2>
@@ -35,13 +32,13 @@
       <div class="col s12 l6" ><img style="width: 80%;" src="images/abhay2.jpg" /></div>
     </div>
 
-    <!-- about me -->
+    <!------------------------------------------------------------ about me ---------------------------------------------------------------------------------->
     <div>
       <blockquote class="left-align"  style="background-image:linear-gradient(to right, #6F2232 , #950740, #C3073F);">
         <h5>A little about Me.</h5>
       </blockquote>
       <div class="row">
-        <div class="col l5 s12">
+        <div class="col l5 s12 me">
           <p style="padding-top: 50px; color: white; font-size:1.1em ; " class="flow-text center-align">
             A Talented Pre-Final Year B.Tech student @IIITDM Jabalpur with a strong academic background
             with the ability to think through a problem coupled with the confidence to make
@@ -49,7 +46,7 @@
             to work alongside an expert team of talented individual's.
           </p>
         </div>
-        <div class="col l5 s12 ">
+        <div class="col l5 s12">
           <p style="color: #C3073F; font-size:1.3em;" class="flow-text center-align">Framework and Technologies</p>
           <center>
             <div class="box">
@@ -63,7 +60,111 @@
           </center>
         </div>
       </div>
-      
+    </div>
+        <!------------------------------------------------------------ project ---------------------------------------------------------------------------------->
+    <div>
+      <blockquote class="left-align"  style="background-image:linear-gradient(to right, #6F2232 , #950740, #C3073F);">
+        <h5>Projects</h5>
+      </blockquote>
+      <div class="row">
+        <div class="col l6 s12 card" style="background: #0b0c10;">
+          <div class="front"> <div id='show_bg_1'></div>  </div>
+          <div class="back">
+            <div class="details">
+              <h2>OH-MISS<br/><span>Devise a solution to track and monitor flora and fauna in a given ecosystem and visualise to resuntantly evaluate the data.<br/>Develoved Embedded software and designed circuit for the device to Store data and location timestamps.<br/> </span></h2> 
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div class="box">
+                  <ul>
+                    <li>Embedded C</li>
+                  </ul>
+                </div>
+                <div class="box">
+                  <ul>
+                    <li>Vue.js</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="social-icons">
+                <a target=”_blank” href="https://github.com/abhaykes1/OH-MISS"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a target=”_blank” href="http://linkedin.com/in/abhaykes1"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="col l6 s12  card" style="background: #0b0c10;">
+          <div class="front"> <div id='show_bg_2'></div> </div>
+          <div class="back">
+            <div class="details">
+              <h2>Shop-App<br/><span>React Native App using Redux Store, Firebase Database, Firebase Auth, Routes and React Navigation API.</span></h2>
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div class="box">
+                  <ul>
+                    <li>React Native</li>
+                  </ul>
+                </div>
+                <div class="box">
+                  <ul>
+                    <li>Firebase</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="social-icons">
+                <a target=”_blank” href="https://github.com/abhaykes1/ShopApp"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a target=”_blank” href="http://linkedin.com/in/abhaykes1"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col l6 s12  card" style="background: #0b0c10;">
+          <div class="front"> <div id='show_bg_3'></div>  </div>
+          <div class="back">
+            <div class="details">
+              <h2>Find-Lyf<br/><span>Developed a snake-like bot for identification of live human from debris using CO2 sensor and Pi camera.<br/>FindLyf Camera is an Android Application to connect with Raspberry Pi Camera Streaming a raw H.264 video on a network</span></h2>
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div class="box">
+                  <ul>
+                    <li>Embedded C</li>
+                  </ul>
+                </div>
+                <div class="box">
+                  <ul>
+                    <li>Android(Java)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="social-icons">
+                <a target=”_blank” href="https://github.com/ajwad-shaikh/FindLyfCamera"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a target=”_blank” href="http://linkedin.com/in/abhaykes1"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col l6 s12  card" style="background: #0b0c10;">
+          <div class="front"> <div id='show_bg_4'></div>  </div>
+          <div class="back">
+            <div class="details">
+              <h2>Aarogya<br/><span>Aarogya aims to empower the elderly to lead a healthier lifestyle by creating a health monitoring system.<br/>Github mirror of Gadgetbridge - A free and cloudless replacement for your gadget vendors' closed source Android applications. Supports Pebble, Mi Band, Liveview, HPlus and more.</span></h2>
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div class="box">
+                  <ul>
+                    <li>Android(Java)</li>
+                  </ul>
+                </div>
+                <div class="box">
+                  <ul>
+                    <li>Firebase</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="social-icons">
+                <a target=”_blank” href="https://github.com/abhaykes1/Gadgetbridge"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a target=”_blank” href="http://linkedin.com/in/abhaykes1"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
 
   </div>

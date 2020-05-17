@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;700&display=swap');
 body, html {
   height: 100%;
   text-align: center;
+  font-family: 'Josefin Slab', serif;
 }
 
 .nameContainer{
@@ -19,6 +21,18 @@ blockquote{
   padding-top: 1px;
   padding-bottom: 1px;
   color: white /* Just change the color value and that's it*/
+}
+
+.me{
+  color: #6F2232;
+}
+.me p{
+  padding-bottom: 50px;
+}
+.me:hover{
+  transform: scale(1.01);
+  border-radius: 10px;
+  background-image:linear-gradient(to right, #6F2232 , #950740, #C3073F);
 }
 .loader-wrapper{
   width: 100%;
@@ -84,7 +98,7 @@ animation: loader-inner 2s infinite ease-in;
 {
   transform: scale(1.1);
   z-index: 100;
-  background: #950740;
+  background-image:linear-gradient(to right, #6F2232 , #950740, #C3073F);
   box-shadow: 0 5px 25px rgba(0,0,0,.2);
   color: #fff;
   opacity: 1;
@@ -104,7 +118,135 @@ animation: loader-inner 2s infinite ease-in;
   font-weight: 600;
   transform: translateY(-2px);
 }
+.card{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  transition: 1s;
+  perspective: 600px;
+}
+.card .front{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  height: 100%;
+  width: 80%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 1s;
+}
+.card:hover .front{
+  transform: rotateX(-180deg);
+}
+.card .back{
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-image:linear-gradient(to right, #6F2232 , #950740, #C3073F);
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 1s;
+}
+.imgp{
+    width: 100%;
+    height: 100%;
 
+}
+#show_bg_1 {
+  background-image:
+  linear-gradient(to right, rgba(111, 34, 50, 0.7), rgba(111, 34, 50, 0.6), rgba(111, 34, 50, 0.5)),
+  url('../images/ohmiss.jpeg');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  color: white;
+}
+#show_bg_2 {
+  background-image:
+  linear-gradient(to right, rgba(111, 34, 50, 0.7), rgba(111, 34, 50, 0.6), rgba(111, 34, 50, 0.5)),
+  url('../images/Shop.jpeg');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  color: white;
+}
+#show_bg_3 {
+  background-image:
+  linear-gradient(to right, rgba(111, 34, 50, 0.7), rgba(111, 34, 50, 0.6), rgba(111, 34, 50, 0.5)),
+  url('../images/snake.jpeg');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  color: white;
+}
+#show_bg_4 {
+  background-image:
+  linear-gradient(to right, rgba(111, 34, 50, 0.7), rgba(111, 34, 50, 0.6), rgba(111, 34, 50, 0.5)),
+  url('../images/Aarogya.png');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  color: white;
+}
+/* .card .back:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(216, 23, 23, 0.1);
+} */
+.card:hover .back{
+  transform: rotateX(0deg);
+}
+.card .back .details{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.card .back .details h2{
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  color: #fff;
+}
+.card .back .details h2 span{
+  font-size: 18px;
+  color: #fff;
+}
+.social-icons a{
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  background: #262626;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+
+}
+.social-icons a .fa{
+  line-height: 36px;
+}
+.social-icons a:hover{
+  background: #C3073F;
+}
 
 @keyframes loader {
 0% {
