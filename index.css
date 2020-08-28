@@ -22,11 +22,11 @@ body {
     align-items: center;
 }
 #spinner {
-    animation: rotate 0.56s infinite linear;
+    animation: rotate 1s infinite linear;
     width:50px;
     height:50px;
-    border:12px solid #6F2232;
-    border-bottom:12px solid #C3073F;
+    border:12px solid #b35900;
+    border-bottom:12px solid #ff9933 ;
     border-radius:50%;
     margin:0;
 }
@@ -47,10 +47,10 @@ body {
     display:inline-block;
 }
 .box1 {
-    background:#6F2232;
+    background:#ff9933;
 }
 .box2 {
-    background:#C3073F;
+    background:#b35900;
     margin-left:-5px;
 }
 #menu {
