@@ -4,184 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>abhaykes1</title>
-    <script src="./main.js"></script>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-
+    <title>Welcome!.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-
-  <div class="container">
-  
-    <!------------------------------------------------------------ home ---------------------------------------------------------------------------------->
-    <div style="padding-top: 20px;"  class="row" id="home">
-      <div class="nameContainer col s12 l6">
-        <h2 class="truncate" style="color: white;">ABHAY</h2>
-        <h2 class="truncate" style="color: #6F2232;">KESHARWANI</h2>
-        <p class="truncate" style="color: white;">
-          
-        </p>
-      </div>
-      <div class="col s12 l6" ><img style="width: 80%;" src="images/abhay2.jpg" /></div>
+    <div id="loading">
+        <div id="spinner"></div>
     </div>
-
-    <!------------------------------------------------------------ about me ---------------------------------------------------------------------------------->
-    <div>
-      <blockquote class="left-align"  style="background-image:linear-gradient(to right, #6F2232 , #950740, #C3073F);">
-        <h5>A little about Me.</h5>
-      </blockquote>
-      <div class="row">
-        <div class="col l5 s12 me">
-          <p style="padding-top: 50px; color: white; font-size:1.1em ; " class="flow-text center-align">
-            A Talented Pre-Final Year B.Tech student @IIITDM Jabalpur with a strong academic background
-            with the ability to think through a problem coupled with the confidence to make
-            ideas heard.I am currently looking for a internship opportunity that will allow me
-            to work alongside an expert team of talented individual's.
-          </p>
-        </div>
-        <div class="col l5 s12">
-          <p style="color: #C3073F; font-size:1.3em;" class="flow-text center-align">Framework and Technologies</p>
-          <center>
-            <div class="box">
-              <ul>
-                <li>React.js</li>
-                <li>Android | Java</li>
-                <li>Node.js</li>
-                <li>Embedded Systems</li>
-              </ul>
-            </div>
-          </center>
-        </div>
-      </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
     </div>
-        <!------------------------------------------------------------ project ---------------------------------------------------------------------------------->
-    <div>
-      <blockquote class="left-align"  style="background-image:linear-gradient(to right, #6F2232 , #950740, #C3073F);">
-        <h5>Projects</h5>
-      </blockquote>
-      <div class="row">
-        <div class="col l6 s12 card" style="background: #0b0c10;">
-          <div class="front"> <div id='show_bg_1'></div>  </div>
-          <div class="back">
-            <div class="details">
-              <h2>OH-MISS<br/><span>Devise a solution to track and monitor flora and fauna in a given ecosystem and visualise to resuntantly evaluate the data.<br/>Develoved Embedded software and designed circuit for the device to Store data and location timestamps.<br/> </span></h2> 
-              <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                <div class="box">
-                  <ul>
-                    <li>Embedded C</li>
-                  </ul>
-                </div>
-                <div class="box">
-                  <ul>
-                    <li>Vue.js</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="social-icons">
-                <a target=”_blank” href="https://github.com/abhaykes1/OH-MISS"><i class="fa fa-github" aria-hidden="true"></i></a>
-                <a target=”_blank” href="http://linkedin.com/in/abhaykes1"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </div>  
-            </div>
-          </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Abhay.</h1>
+        <h2>Software Developer / Competitive Programmer / Human</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
         </div>
-        <div class="col l6 s12  card" style="background: #0b0c10;">
-          <div class="front"> <div id='show_bg_2'></div> </div>
-          <div class="back">
-            <div class="details">
-              <h2>Shop-App<br/><span>React Native App using Redux Store, Firebase Database, Firebase Auth, Routes and React Navigation API.</span></h2>
-              <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                <div class="box">
-                  <ul>
-                    <li>React Native</li>
-                  </ul>
-                </div>
-                <div class="box">
-                  <ul>
-                    <li>Firebase</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="social-icons">
-                <a target=”_blank” href="https://github.com/abhaykes1/ShopApp"><i class="fa fa-github" aria-hidden="true"></i></a>
-                <a target=”_blank” href="http://linkedin.com/in/abhaykes1"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col l6 s12  card" style="background: #0b0c10;">
-          <div class="front"> <div id='show_bg_3'></div>  </div>
-          <div class="back">
-            <div class="details">
-              <h2>Find-Lyf<br/><span>Developed a snake-like bot for identification of live human from debris using CO2 sensor and Pi camera.<br/>FindLyf Camera is an Android Application to connect with Raspberry Pi Camera Streaming a raw H.264 video on a network</span></h2>
-              <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                <div class="box">
-                  <ul>
-                    <li>Embedded C</li>
-                  </ul>
-                </div>
-                <div class="box">
-                  <ul>
-                    <li>Android(Java)</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="social-icons">
-                <a target=”_blank” href="https://github.com/ajwad-shaikh/FindLyfCamera"><i class="fa fa-github" aria-hidden="true"></i></a>
-                <a target=”_blank” href="http://linkedin.com/in/abhaykes1"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col l6 s12  card" style="background: #0b0c10;">
-          <div class="front"> <div id='show_bg_4'></div>  </div>
-          <div class="back">
-            <div class="details">
-              <h2>Aarogya<br/><span>Aarogya aims to empower the elderly to lead a healthier lifestyle by creating a health monitoring system.<br/>Github mirror of Gadgetbridge - A free and cloudless replacement for your gadget vendors' closed source Android applications. Supports Pebble, Mi Band, Liveview, HPlus and more.</span></h2>
-              <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                <div class="box">
-                  <ul>
-                    <li>Android(Java)</li>
-                  </ul>
-                </div>
-                <div class="box">
-                  <ul>
-                    <li>Firebase</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="social-icons">
-                <a target=”_blank” href="https://github.com/abhaykes1/Gadgetbridge"><i class="fa fa-github" aria-hidden="true"></i></a>
-                <a target=”_blank” href="http://linkedin.com/in/abhaykes1"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a target="_blank" href="https://www.facebook.com/abhay.kesharwani.948" class="social"><i class="fab fa-facebook"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a target="_blank" href="https://twitter.com/Abhaykes1" class="social"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a target="_blank" href="https://www.instagram.com/abhay_kesharwani/" class="social"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a target="_blank" href="https://github.com/abhaykes1" class="social"><i class="fab fa-github"></i></a></td>
+                </tr>
+        </table>
     </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>works.</h1>
+        <section>
+            <div>
+                <h2>OH-MISS</h2>
+                <p>
+                    • devise a solution to track and monitor flora
+                    and fauna in a given ecosystem and visualise to
+                    resuntantly evaluate the data.
+                </p>
+                <p>
+    
+                    • Develoved Embedded software and designed
+                    circuit for the device to Store data and location
+                    timestamps.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;Embedded C</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Vue.js</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                </div>
+                <button onclick="window.location.href='https://github.com/ajwad-shaikh/oh-miss' " class="btn_one">source</button>
+                <button onclick="window.location.href='https://oh-miss.web.app/' " class="btn_two">see live</button>
+            </div>
+            <!-- ADD MORE PROJECTS -->
+            <!-- <div>
 
-  </div>
-
-
-
-
-  <!-- Pre Loader -->
-  <div class="loader-wrapper">
-    <span class="loader"><span class="loader-inner"></span></span>
-  </div>
-
-  <script>
-    $(window).on("load", setTimeout( function(){
-      $(".loader-wrapper").fadeOut("slow");
-    },1000));
-  </script>
-
+            </div> -->
+            
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about.</h1>
+            <section>
+                <p>
+                    A Talented Pre-Final Year B.Tech student @IIITDM Jabalpur with a strong academic background 
+                    with the ability to think through a problem coupled with the confidence to make ideas heard. 
+                    I am currently looking for an internship/job opportunity that will allow me to work alongside 
+                    an expert team of talented individual's because the best way to move forward would be to get practical 
+                    working experience in an established platform and acquire skills that can shape me as a valued professional in this field.                
+                </p>
+                <!-- <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p> -->
+            </section>
+            <section>
+                <h2>skills</h2>
+                <p>
+                    i do eveything ;)
+                </p>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            Connect me on Linkedin <br> <a href="https://www.linkedin.com/in/abhaykes1/">Abhaykes1</a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
