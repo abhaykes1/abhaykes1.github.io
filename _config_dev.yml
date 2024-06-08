@@ -1,26 +1,26 @@
 # Site settings
-name: Arnav Deep
-title: Arnav Deep | Software Engineer and Data Scientist
+name: Abhay Kesharwani
+title: Abhay Kesharwani | Software Engineer
 description: Focused on building solutions for billions.
-url: https://arnav-deep.github.io/
+url: https://abhaykes1.github.io/
 baseurl: ''
-email: arnavd4@gmail.com
-cover: https://arnav-deep.github.io/img/og.png
-logo: https://arnav-deep.github.io/img/emojis/technologist.png
-resume: https://bit.ly/arnav-deep-resume
+email: abhaykesharwani40@gmail.com
+cover: https://abhaykes1.github.io/img/og.png
+logo: https://abhaykes1.github.io/img/emojis/technologist.png
+resume: https://drive.google.com/file/d/1tpwWK9wLMf8RJfuLLpRn53_B_dTsUduw/view?usp=sharing
 social:
   - title: email
-    url: mailto:arnavd4@gmail.com
+    url: mailto:abhaykesharwani40@gmail.com
   - title: linkedin
-    url: https://www.linkedin.com/in/arnav-deep
+    url: https://www.linkedin.com/in/abhaykes1
   - title: github
-    url: https://github.com/arnav-deep
+    url: https://github.com/abhaykes1
   - title: codechef
-    url: https://codechef.com/users/thrown
+    url: https://codechef.com/users/abhaykes1
   - title: twitter
-    url: https://twitter.com/arnavd4
+    url: https://x.com/Abhaykes1
   - title: instagram
-    url: https://instagram.com/arnav_deep
+    url: https://www.instagram.com/abhay_kesharwani/
 
 # Build settings
 markdown: kramdown

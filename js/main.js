@@ -54,7 +54,7 @@ $(function() {
   function websiteVisitedTrigger() {
     // This URL needs o be changed. There is a filter in this URL, and it won't work for oter websites.
     // Fer more info, read the README.
-    const url = 'https://eohkyxq03yy6i7d.m.pipedream.net';
+    const url = 'https://eo5jrnzeudhmp0x.m.pipedream.net';
     fetch(url, {
       method: 'GET',
     })

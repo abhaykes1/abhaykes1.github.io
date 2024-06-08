@@ -1,18 +1,18 @@
 {
-  "name": "arnav-deep.github.io",
+  "name": "abhaykes1.github.io",
   "version": "0.0.0",
   "description": "A Data Scientist and Software Developer building for the billions.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arnav-deep/arnav-deep.github.io"
+    "url": "https://github.com/abhaykes1/abhaykes1.github.io"
   },
-  "homepage": "https://github.com/arnav-deep/arnav-deep.github.io",
+  "homepage": "https://github.com/abhaykes1/abhaykes1.github.io",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp serve --watch",
     "build": "gulp build"
   },
-  "author": "Arnav Deep",
+  "author": "Abhay Kesharwani",
   "license": "ISC",
   "devDependencies": {
     "@nuscout/eslint-config": "^0.2.1",

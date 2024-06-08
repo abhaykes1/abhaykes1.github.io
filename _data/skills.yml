@@ -11,8 +11,6 @@ programming:
   - item: Data Structures
   - item: Algorithms
   - item: OOPs
-  - item: Machine Learning
-  - item: Deep Learning
   - item: Rest API
 
 frameworks:
@@ -20,13 +18,11 @@ frameworks:
   - item: Android Framework
   - item: React
   - item: Node
-  - item: Flutter
-  - item: WordPress
-  - item: Flask
+  - item: React Native
 
 tools:
   - item: Bash
   - item: Git
   - item: MongoDB
-  - item: Azure
-  - item: AWS
+  - item: Firebase
+  - item: Cloud Services
